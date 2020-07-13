@@ -8,6 +8,8 @@ module.exports = function(grunt) {
     SwaggerParser.validate(options.path, { validate: options.validate })
       .then(() => {
         grunt.log.ok('The swagger document is syntactically correct');
+        grunt.log.ok('Passsss');
+        
         done();
       }).catch((err) => {
         grunt.log.error(err.message);
